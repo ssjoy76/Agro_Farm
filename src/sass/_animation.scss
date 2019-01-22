@@ -1,0 +1,44 @@
+@keyframes inheight {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes inwidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes new{
+  from{
+    transform: rotateY(90deg);
+    left: 100%;
+    top: 100%;
+  }to{
+    transform: rotateY(0deg);
+    left: -50%;
+    top: 100%;
+  }
+}
+@keyframes left-right{
+  0%{
+    left:100%;
+  }20%{
+    left:60%;
+  }100%{
+    left:60%;
+  }
+}@keyframes left_right{
+  0%{
+    left: -100%;
+  }20%{
+    left: 0;
+  }100%{
+    left:0;
+  }
+}

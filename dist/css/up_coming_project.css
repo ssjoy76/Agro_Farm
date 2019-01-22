@@ -1,0 +1,64 @@
+h2,h1{
+	font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #121212;
+}
+#cows{
+    background: rgba(255, 236,239,0.81);
+    padding-bottom: 60px;
+}
+#mushroom{
+    background: #034500;
+}
+#egg{
+    background: rgba(255, 236,239,0.81);
+}
+.text-center {
+
+	color:#4dd0e1;
+}
+#cows h4,#mushroom h4, #egg h4 {
+    line-height: 81px;
+    margin: 40px 0 0 0;
+    position: relative;
+}
+h4:after {
+	content: '';
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #19c40c;
+}
+#cows a, #mushroom a, #egg a {
+	width: 295px;
+    line-height: 50px;
+    color: #fff;
+    border: 5px solid #19c40c;
+    background: #19c40c;
+    text-align: center;
+    font-size: 16px;
+}
+#cows a:hover, #mushroom a:hover, #egg a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+    background-color:white;
+    color:green;
+}
+.button-fix {
+	border-radius: 500px;
+	transition: all 0.3s ease-in-out;
+}
+#cows img, #mushroom img, #egg img {
+    margin: 155px 0 150px 0;
+}
+#cows p,li {
+    color: #034500 !important;
+}
+#egg p,li{
+    color: #034500 !important;
+}
+#mushroom p, h1, h4, #mushroom li{
+    color:#fff !important; 
+}

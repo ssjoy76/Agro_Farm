@@ -1,0 +1,248 @@
+@import "variable";
+@import "universal";
+#banner{
+	position: relative;
+	background: url(../images/slider_1.jpg) no-repeat center center;
+	height: 250px;
+	background-size: cover;
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: rgba($black,0.5);
+	}
+	.b-custom{
+		position: relative;
+		.slider_text{
+			top: 110px;
+		}
+	}
+	.back{
+		@extend %center;
+		left: 80%;
+		.breadcrumb{
+			background: transparent;
+			.breadcrumb-item, .breadcrumb-item:hover {
+				font-size: 20px;
+				color: rgba($color-2,1);
+			}
+		}
+	}
+}
+
+#ceo{
+	background: rgba($color-2,1);
+	padding: 50px 0;
+	color: rgba($color-1,1) !important;
+	.w-20{
+		width: 30%;
+		min-height: 250px;
+	}
+	p{
+		color: rgba($black,1) !important;
+		font-family: 'Open Sans', sans-serif;
+	}
+}
+/*
+===========================================================
+  18. our-goal style
+===========================================================
+*/
+#goal{
+	padding:50px 0;
+	background: url(../images/hen_2.jpg) no-repeat;
+	position: relative;
+	z-index: 500;
+	.sec-title{
+	  text-align: center;
+	  color: rgba($color-2,1);
+	  position: relative;
+	  z-index: 700 !important;
+	  p{
+		  max-width: 650px;
+		  margin: 20px auto;
+		  color: rgba($color-2,1);
+		  font-family: 'Open Sans', sans-serif;
+		}
+	}
+	.single-goal-item {
+	  margin: 26px 0;
+	  position: relative;
+	  padding-left: 80px;
+	  background: rgba($color-2,0.71);
+	  -webkit-transition:.5s;
+	  transition:.5s;
+	  z-index: 700;
+	  &:hover{
+		  -webkit-transition:.5s;
+		  transition:.5s;
+		}
+		.top-border{
+		    width: 100%;
+		    height: 2px;
+		    background: #eee;
+		    position: absolute;
+		    left: 0px;
+		    transform: rotate(180deg);
+		}
+		.bottom-border{
+		    width: 100%;
+		    height: 2px;
+		    background: rgba($color-2,0.8);
+		    position: absolute;
+		    bottom: 0px;
+		    right: 0px;
+		}
+		.top-border:before,.bottom-border:before {
+		    background: rgba($color-1,1);
+		    content: '';
+		    position: absolute;
+		    top:0;left:0;
+		    width: 0%;
+		    height: 100%;
+		    transition: all .3s ease .0s;   
+		}
+		&:hover .top-border:before, &:hover .bottom-border:before {
+		    transition: all .3s ease;
+		    width: 100%;
+		}
+		.goal-icon {
+		  position: absolute;
+		  margin-top: -27px;
+		  top: 50%;
+		  left: 14px;
+		  width: 55px;
+		  height: 54px;
+		  overflow: hidden;
+		  text-align: center;
+		  i, i:before {
+			  font-size: 36px;
+			  color: rgba($color-1,1);
+			  top: 0px;
+			  margin: 0;
+			}
+		}
+		.goal-text {
+		  overflow: hidden;
+		  padding: 38px 10px 38px;
+		  h4 {
+			  text-transform: capitalize;
+			  font-size: 16px;
+			  font-weight: 500;
+			  margin-bottom: 13px;
+			  margin-top: 0;
+			  a, a:hover {
+				  color: rgba($color-1,1);
+				  transition:.5s;
+				  
+				}
+			}
+			p, .goal-text p:hover {
+			  color: rgba($color-1,1);
+			  font-family: 'Open Sans', sans-serif;
+			  font-size: 14px;
+			  line-height: 22px;
+			}
+		}
+	}
+}
+
+.team-member {
+	position: relative;
+	overflow: hidden;
+}
+.member_detail{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	display: block;
+	background: rgba($color-1,0.8);
+	transition: all 0.5s;
+}
+.team-member:hover .member_detail{
+	left: 0;
+}
+.member-link{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+	width: 100%;
+	color: rgba($color-2,1);
+	padding-top: 50px;
+}
+.member-link .ic a{
+	color: rgba($color-2,1) !important;
+}
+.member-link .ic{
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid rgba($color-2,1);
+	padding:5px;
+	display: inline-block;
+}
+.member-link .ic:hover{
+	background: rgba($color-1,1);
+}.social_link{
+	margin-top: 30px;
+}
+.social_link::after,.social_link::before{
+	content: "";
+	width: 80%;
+	height: 2px;
+	background: rgba($color-2,1);
+	display: block;
+	margin:10px auto;
+}
+.social_link::before{
+	width: 60%;
+}
+#others{
+	background: rgba($color-1,1);
+}
+#others .card{
+	background: transparent;
+	border: 0 !important;
+}
+#others .btn-primary{
+	background: rgba($color-2,1);
+	border-radius: 0;
+	color: rgba($color-1,1);
+	border: 0;
+}
+.heading-2{
+	color: rgba($color-2,1);
+}
+.owl-prev,.owl-next{
+	position: absolute;
+    top: 50%;
+    left: 4%;
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%,-50%);
+    color: rgba($color-2,1);
+    border:2px solid rgba($color-2,1);
+    border-radius: 50%;
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 5px rgba($black,0.5);
+    transition: background .5s;
+    text-transform: uppercase;
+}
+.owl-next{
+	left: 96%;
+}
+.owl-prev:hover, .owl-next:hover {
+	background: rgba($color-1,1);
+}
+#team{
+	padding: 50px 0;
+}

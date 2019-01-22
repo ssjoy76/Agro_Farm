@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log In</title>
+	<link rel="shortcut icon" href="images/logo_shortcut.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="row justify-content-center">
+				<form class="col-md-4 col-sm-7 col-10" id="login_form">
+				  <div class="signup ml-5">
+					<a href="registation.html">S <br> I<br>G<br>N<br>U<br>P</a>
+				  </div>
+				  <a href="index.html"><img src="images/logo.png" class="w-100 mt-2 mb-4" alt="logo"></a>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <div class="input-group mb-2 mb-sm-0">
+				        <input type="password" name="password" class="form-control form-custom" id="exampleInputPassword1" placeholder="Password">
+				        <div class="input-group-addon"><i class="fa fa-eye"></i></div>
+				    </div>
+				  </div>
+				  <button type="submit" class="btn btn-primary w-100">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-eye").click(function(){
+				var x = $("input[name='password']").attr("type");
+				if(x == "password"){
+					$("input[name='password']").attr("type","text");
+				}else{
+					$("input[name='password']").attr("type","password");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

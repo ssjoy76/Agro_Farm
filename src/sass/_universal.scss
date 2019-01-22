@@ -1,0 +1,65 @@
+/* Universal */
+body {
+  background: url(../images/vage_2.jpg) no-repeat center center fixed;
+  background-size: 100% 100%;
+  transition: scroll 3s;
+}
+body a, body p {
+  text-decoration: none;
+  font-family: "Keania One", cursive;
+  color: $color-2;
+}
+body a:hover, body p:hover {
+  text-decoration: none;
+  font-family: "Keania One", cursive;
+}
+body h3 {
+  font-size: 30px !important;
+  font-family: "Faster One", cursive;
+  font-weight: normal !important;
+  display: inline-block;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+#Loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #141414;
+  z-index: 5000;
+  img{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+%center {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.animated {
+  animation-fill-mode: inherit;
+}
+.z-low {
+  z-index: 100;
+}
+.z-high {
+  z-index: 200;
+}
+.btn-primary, .btn-primary:focus {
+  background: $color-1;
+  border:1px solid $color-2;
+  &:hover {
+    background: rgba($color-2,0.91);
+    color: $color-1 !important;
+  }
+}
+.new-active{
+  transform: scale(1) !important;
+}
